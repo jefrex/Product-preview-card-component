@@ -1,0 +1,115 @@
+/* 
+Fonts for project:  Montserrat Weights: 500, 700 and Fraunces -Weights: 700
+font-family: 'Montserrat', sans-serif;
+font-family: 'Fraunces', serif; 
+*/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+
+#container {
+    display: flex;    
+    width: 600px;
+}
+
+#pictures {
+    width: 50%;
+}
+
+#pictureDesktop {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+#description {
+    width: 50%;
+    padding: 25px;
+    overflow: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 12px 12px 0;
+}
+
+#description > div {
+    margin-right: 10px;    
+}
+
+.product {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: darkgray;
+}
+
+.title {
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
+    margin-bottom: 25px;
+}
+
+.about {
+    font-family: 'Montserrat', sans-serif;
+    color: darkgray;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+#price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+#discountPrice {
+    color: hsl(158, 39%, 41%);
+    font-family: 'Fraunces', serif; 
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0;
+}
+
+#oldPrice {
+    margin: 0;
+    text-decoration: line-through;
+    color: darkgray;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-weight: 500;
+    background-color: hsl(158, 39%, 41%);
+    border: none;
+    border-radius: 8px;
+    transition: 1s;
+}
+
+button:hover {
+    box-shadow: 5px 5px 15px #000;
+}
+
+footer {    
+    position: absolute;
+    bottom: 0;
+    
+}
