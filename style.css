@@ -28,6 +28,11 @@ body {
     border-radius: 12px 0 0 12px;
 }
 
+#pictureMobile {
+    display: none;
+    visibility: hidden;
+}
+
 #description {
     width: 50%;
     padding: 25px;
@@ -98,7 +103,7 @@ button {
     padding: 10px;
     color: white;
     font-weight: 500;
-    background-color: hsl(158, 39%, 41%);
+    background-color: hsl(158, 41%, 34%);
     border: none;
     border-radius: 8px;
     transition: 1s;
@@ -111,5 +116,54 @@ button:hover {
 footer {    
     position: absolute;
     bottom: 0;
-    
+    margin-bottom: 10px;
+    text-align: center;
 }
+
+/* Media queries */
+
+@media (max-width: 720px) {
+    body {
+        overflow-x: hidden;
+        
+    }
+    
+    #container {
+        display: block;
+        height: 100%;
+        width: 100%;        
+        padding: 20px;
+    }
+
+    #pictures {
+        width: 100%;
+    }
+
+    #pictureDesktop {
+        visibility: hidden;
+        display: none;
+    }
+
+    #pictureMobile {
+        visibility: visible;
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px 12px 0 0;
+    }
+
+    #description {
+        width: 100%;
+        height: 100%;
+        padding: 25px;
+        overflow: auto;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0 0px 12px 12px;
+    }
+
+    #attribution {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
